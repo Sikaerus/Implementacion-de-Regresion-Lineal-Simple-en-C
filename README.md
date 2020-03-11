@@ -8,9 +8,9 @@ Se asume que cuenta mínimo con GNUplot Version 5.0
 Abrir la terminal en la ubicación actual
 	Escriba en la terminal los siguientes comandos en orden
 
-		$ make
-		$ ./regresion_lineal conjunto_de_datos.txt
-		$ make clean
+	$ make
+	$ ./regresion_lineal conjunto_de_datos.txt
+	$ make clean
 
 Archivos de datos
 	
