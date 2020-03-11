@@ -156,7 +156,7 @@ double covarianza(double vector_x[], double vector_y[], int numero_variables){
 	double sumatoria_pre_covarianza = 0;
 	for(i = 0; i < numero_variables;i++){
 		sumatoria_pre_covarianza += (vector_x[i] - media_aritmetica(vector_x, numero_variables)) *
-																(vector_y[i] - media_aritmetica(vector_y, numero_variables));
+					    (vector_y[i] - media_aritmetica(vector_y, numero_variables));
 	}
 	covarianza = sumatoria_pre_covarianza/numero_variables;
 	return covarianza;
@@ -203,14 +203,15 @@ void graficar(double vector_x[], double vector_y[], int numero_variables, double
 		fprintf(recta, "%d %lf \n", i, vector_recta[i]);
 	}
 
-	char * config_gnuplot[] = {"set title \"Regresión lineal\"",
-														"set xlabel \"x - Colesterol\"","set ylabel \"y - Triglicéridos\"",
-														"set xrange [-1:16]",
-														"set yrange [-1:16]",
-														"set zeroaxis",
-														"plot \"puntos_dispercion.dat\" title \"Relación Colesterol-Triglicéridos\" pt 7 lt rgb \"red\" ",
-														"replot \"recta.dat\" using 1:2 with lines title \"Recta y = a + b*x_{i} \" lt rgb \"blue\"",
-														"pause 1"};
+	char * config_gnuplot[] = {
+			"set title \"Regresión lineal\"",
+			"set xlabel \"x - Colesterol\"","set ylabel \"y - Triglicéridos\"",
+			"set xrange [-1:16]",
+			"set yrange [-1:16]",
+			"set zeroaxis",
+			"plot \"puntos_dispercion.dat\" title \"Relación Colesterol-Triglicéridos\" pt 7 lt rgb \"red\" ",
+			"replot \"recta.dat\" using 1:2 with lines title \"Recta y = a + b*x_{i} \" lt rgb \"blue\"",
+			"pause 1" };
 
 	FILE * ventana_gnuplot = popen("gnuplot -persist", "w");
 
