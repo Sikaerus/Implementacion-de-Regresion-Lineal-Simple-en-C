@@ -39,10 +39,10 @@ int main(int argc, char const *argv[]) {
 	register int i = 0;
 	double X[numero_variables]; double Y[numero_variables];
 	archivo = fopen( argv[1], "r" );
-  while(fscanf(archivo, "%lf,%lf", &x, &y) == 2){
-    printf("Valor de x: %lf, Valor de y: %lf\n", x, y);
+	while(fscanf(archivo, "%lf,%lf", &x, &y) == 2){
+		printf("Valor de x: %lf, Valor de y: %lf\n", x, y);
 		X[i] = x; Y[i] = y; i++;
-  }
+	}
 
 	//Sumatoria
 	double sumatoria_x = sumatoria(X, numero_variables);
