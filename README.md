@@ -3,7 +3,7 @@ Regresión Lineal Simple
 
 **COMPILAR Y EJECUTAR EN LINUX**
 
-Se asume que cuenta minimo con GNUplot v=Version 5.0
+Se asume que cuenta mínimo con GNUplot Version 5.0
 
 Abrir la terminal en la ubicación actual
 	Escriba en la terminal los siguientes comandos en orden
@@ -13,6 +13,7 @@ Abrir la terminal en la ubicación actual
 		$ make clean
 
 Archivos de datos
+	
 	colesterol_y_triglicéridos.txt
 	accidentes_de_trafico.txt
 
