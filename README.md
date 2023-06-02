@@ -3,14 +3,15 @@ Regresión Lineal Simple
 
 **COMPILAR Y EJECUTAR EN LINUX**
 
-Se asume que cuenta mínimo con GNUplot versión 5.0
+Se asume que cuenta mínimo con GNUplot versión 5.4 y cmake versión 3.22.1
 
 Abrir la terminal en la ubicación actual
 	Escriba en la terminal los siguientes comandos en orden
 
 	$ make
-	$ ./regresion_lineal conjunto_de_datos.txt
 	$ make clean
+
+	*Para que se trabajé con otro archivo de datos modificar el archivo Makefile
 
 Archivos de datos
 	
