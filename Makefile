@@ -11,3 +11,4 @@ ejecuta:
 
 clean:
 	rm -f grafica.png recta.dat puntos_dispercion.dat regresion
+	clear
