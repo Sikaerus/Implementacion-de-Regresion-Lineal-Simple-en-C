@@ -6,7 +6,7 @@
 //NUMERO DE PUNTOS PARA LA RECTA
 #define NPR 100
 //NUMERO DE COMANDOS DE GRAFICACIÓN
-#define NCG 8
+#define NCG 11
 
 double sumatoria(double vector[],  int numero_variables);
 double media_aritmetica(double vector[], int numero_variables);
@@ -211,6 +211,9 @@ void graficar(double vector_x[], double vector_y[], int numero_variables, double
 			"set zeroaxis",
 			"plot \"puntos_dispercion.dat\" title \"Relación Colesterol-Triglicéridos\" pt 7 lt rgb \"red\" ",
 			"replot \"recta.dat\" using 1:2 with lines title \"Recta y = a + b*x_{i} \" lt rgb \"blue\"",
+			"set terminal png",
+			"set output \"grafica.png\"",
+			"replot",
 			"pause 1" };
 
 	FILE * ventana_gnuplot = popen("gnuplot -persist", "w");
